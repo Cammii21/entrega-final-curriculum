@@ -11,10 +11,10 @@ export class HeaderComponent implements OnInit {
   Educacion: any;
   constructor(private cvService:CvService){}
   ngOnInit(): void {
-    this.cvService.obtenerEducacion().subscribe(
+    this.cvService.obtenerDatos().subscribe(
       data => {
-        console.log(data["informacionCv"][4]);
-        this.Educacion=data["informacionCv"][4];
+        console.log(data["heater"]);
+        this.Educacion=data["heater"];
       }
     )
   }

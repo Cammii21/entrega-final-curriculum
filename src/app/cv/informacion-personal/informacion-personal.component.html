@@ -1,6 +1,5 @@
 <section>
     <h2>Información personal</h2>
-    <p>{{Educacion.informacionPersonal[0]}}</p>
-    <p>{{Educacion.informacionPersonal[1]}}</p>
-    <p>{{Educacion.informacionPersonal[2]}}</p>
+    <li *ngFor="let item of Educacion">{{item.informacionPersonal}}</li>
   </section>
+

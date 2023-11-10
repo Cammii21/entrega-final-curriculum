@@ -1,8 +1,6 @@
 <section>
     <h2>Experiencia Laboral</h2>
     <ul>
-      <li>{{Educacion.experienciaLaboral[0]}}</li>
-      <li>{{Educacion.experienciaLaboral[1]}}</li>
-      <li>{{Educacion.experienciaLaboral[3]}}</li>
+      <li *ngFor="let item of Educacion">{{item.experienciaLaboral}}</li>
     </ul>
   </section>

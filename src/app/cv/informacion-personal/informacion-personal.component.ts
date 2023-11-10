@@ -11,10 +11,10 @@ export class InformacionPersonalComponent implements OnInit {
   Educacion: any;
   constructor(private cvService:CvService){}
   ngOnInit(): void {
-    this.cvService.obtenerEducacion().subscribe(
+    this.cvService.obtenerDatos().subscribe(
       data => {
-        console.log(data["informacionCv"][5]);
-        this.Educacion=data["informacionCv"][5];
+        console.log(data["informacionPersonal"]);
+        this.Educacion=data["informacionPersonal"];
       }
     )
   }

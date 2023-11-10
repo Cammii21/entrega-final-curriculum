@@ -11,7 +11,7 @@ export class FooterComponent implements OnInit {
   Educacion: any;
   constructor(private cvService:CvService){}
   ngOnInit(): void {
-    this.cvService.obtenerEducacion().subscribe(
+    this.cvService.obtenerDatos().subscribe(
       data => {
         console.log(data["informacionCv"][2]);
         this.Educacion=data["informacionCv"][2];
